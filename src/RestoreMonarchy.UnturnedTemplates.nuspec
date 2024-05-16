@@ -2,12 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>RestoreMonarchy.UnturnedTemplates</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>Plugin templates for Unturned</description>
 	  <projectUrl>https://github.com/RestoreMonarchyPlugins/UnturnedTemplates</projectUrl>
 	  <repository type="git" url="https://github.com/RestoreMonarchyPlugins/UnturnedTemplates.git" />
     <authors>Restore Monarchy</authors>
     <icon>icon.png</icon>
+    <readme>README.md</readme>
 	  <license type="file">LICENSE</license>
 	  <tags>Unturned, Unturned Plugin, Rocket Plugin, Unturned Server, Unturned Rocket Plugin</tags>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -17,6 +18,7 @@
   </metadata>
   <files>
     <file src="..\LICENSE" target="LICENSE" />
+    <file src="..\README.md" target="README.md" />
     <file src="..\icon.png" target="icon.png" />
     <file src="Content\**\*.*" exclude="Content\**\bin\**\*.*;Content\**\obj\**\*.*;Content\**\.vs\**\*.*" target="Content" />
   </files>  
