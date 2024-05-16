@@ -1,0 +1,13 @@
+name: NuGet Package Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  call-nuget-package-publish:
+    uses: RestoreMonarchyPlugins/github-actions/.github/workflows/nuget-package-publish.yml@master
+    with:
+      project_name: "./src/RestoreMonarchy.UnturnedTemplates.nuspec"
