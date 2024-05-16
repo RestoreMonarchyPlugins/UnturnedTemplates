@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Restore Monarchy",
+  "classifications": ["Library"],
+  "name": "Unturned Plugin",
+  "description": "A project for creating an Unturned plugin using .NET Framework 4.8 and RocketMod.",
+  "shortName": "UnturnedPlugin",
+  "defaultName": "Sample",
+  "identity": "RestoreMonarchy.UnturnedTemplates.Plugin",
+  "tags": { 
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Sample",
+  "guids": [
+    "7F66C020-897C-4E62-A519-F623C5884115",
+    "900C4FDF-C5E3-4106-A80A-D4FD34B143CC"
+  ],
+  "symbols": {
+	  "Author": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Author name to use in the project namesppace.",
+      "isRequired": true
+    },
+    "AuthorNamespace": {
+      "type": "generated",
+      "datatype": "string",
+      "generator": "regex",
+      "replaces": "Author",
+      "parameters": {
+        "source": "Author",
+        "steps": [
+          {
+            "regex": " ",
+            "replacement": ""
+          }
+        ]
+      }
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "Sample.csproj"
+    },
+    {
+      "path": "README.md"
+    }
+  ],
+  "postActions": [
+    {
+      "description": "Opens README.md in the editor",
+      "manualInstructions": [ ],
+      "actionId": "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
+      "args": {
+        "files": "1"
+      },
+      "continueOnError": true
+    }
+  ]
+}
