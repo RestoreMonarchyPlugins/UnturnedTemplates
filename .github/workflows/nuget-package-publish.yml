@@ -10,4 +10,4 @@ jobs:
   call-nuget-package-publish:
     uses: RestoreMonarchyPlugins/github-actions/.github/workflows/nuget-package-publish.yml@master
     with:
-      project_name: "./src/RestoreMonarchy.UnturnedTemplates.nuspec"
+      nuspec_path: "./src/RestoreMonarchy.UnturnedTemplates.nuspec"
