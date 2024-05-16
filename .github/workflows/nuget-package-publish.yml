@@ -11,3 +11,4 @@ jobs:
     uses: RestoreMonarchyPlugins/github-actions/.github/workflows/nuget-package-publish.yml@master
     with:
       nuspec_path: "./src/RestoreMonarchy.UnturnedTemplates.nuspec"
+    secrets: inherit
