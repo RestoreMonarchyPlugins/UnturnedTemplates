@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>RestoreMonarchy.UnturnedTemplates</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description>Plugin templates for Unturned</description>
 	  <projectUrl>https://github.com/RestoreMonarchyPlugins/UnturnedTemplates</projectUrl>
 	  <repository type="git" url="https://github.com/RestoreMonarchyPlugins/UnturnedTemplates.git" />
